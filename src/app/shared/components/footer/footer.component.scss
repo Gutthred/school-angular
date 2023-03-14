@@ -1,0 +1,40 @@
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    min-height: 7rem;
+    background-color: #686868;
+}
+
+.footer__navBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+}
+
+.navBar__item{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.footer__description{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+}
+
+h4, p{
+    margin: 0.3rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
