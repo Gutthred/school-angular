@@ -12,7 +12,7 @@ export class ListagemComponent implements OnInit {
     name: string;
     description: string;
     wage: number;
-    role: String;
+    role: string;
   };
 
   constructor() {}
