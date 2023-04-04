@@ -1,1 +1,5 @@
-<p>products works!</p>
+<app-header></app-header>
+<section class="characters__main-container">
+    <app-character *ngFor="let c of character" [character]="c"></app-character>
+</section>
+<app-footer></app-footer>
