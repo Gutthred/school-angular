@@ -1,21 +1,48 @@
-.character__card{
+.konoha-shinobi{
+    background-image: url('https://i.pinimg.com/originals/0e/d2/10/0ed210c797e0cac18fb12bb4f1b0bdf2.png');
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+.iwa-shinobi{
+    background-image: url('https://pm1.narvii.com/6938/59bf1514bab6d207257d16e843428db934dcbb84r1-360-450v2_00.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kiri-shinobi{
+    background-image: url('https://pm1.narvii.com/6559/32096b1bfdd9587e012e0fb54e8e6e2cff4f9f14_00.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .card-img{
-    // background-size: cover;
-    height: 250px;
+    display: flex;
+    padding: 0 1rem;
+    min-height: 300px;
     width: 100%;
+    border-radius: 50%;
 }
 
 .character__card-content{
     display: flex;
     flex-direction: column;
-    height: 345px;
-    gap: 0.3rem;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.3rem;    
+    margin-bottom: 1rem;
+    border-radius: 5%;
+    background-color: rgba($color: #FFF, $alpha: 0.9);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .character__affiliation, .character__nature{

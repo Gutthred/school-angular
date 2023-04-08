@@ -1,4 +1,10 @@
-<mat-card class="character__card">
+<mat-card
+  [ngClass]="{
+    'konoha-shinobi': character.mainAffiliation === 'konoha',
+    'iwa-shinobi': character.mainAffiliation === 'iwa',
+    'kiri-shinobi': character.mainAffiliation === 'kiri'
+  }"
+>
   <img
     class="card-img"
     mat-card-image
@@ -9,18 +15,18 @@
     <mat-card-title>{{ character.name }} {{ character.clan }}</mat-card-title>
     <mat-card-subtitle
       >{{ character.patent }} of
-      {{ character.affiliation[0] }}</mat-card-subtitle
+      {{ character.mainAffiliation }}</mat-card-subtitle
     >
     <p>
       {{ character.name }} is {{ character.clan }}'s clan member and has been a
-      former {{ character.patent }} of {{ character.affiliation[0] }}, the
+      former {{ character.patent }} of {{ character.mainAffiliation }}, the
       elements affinity and other affiliations will be listed down below as with
       the total of missions and kills.
     </p>
     <div class="character__stats">
       <div class="character__affiliation">
         <h5>Affiliation:</h5>
-        <div class="c__affiliation">{{character.affiliation}}</div>
+        <div class="c__affiliation">{{ character.affiliation }}</div>
       </div>
       <div class="character__nature">
         <h5>Nature Affinity:</h5>
@@ -38,8 +44,4 @@
       >
     </div>
   </mat-card-content>
-  <!-- <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions> -->
 </mat-card>

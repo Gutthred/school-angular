@@ -11,6 +11,7 @@ export class CharacterComponent {
     name: string;
     clan: string;
     affiliation: string[];
+    mainAffiliation: string;
     nature: string[];
     patent: string;
     mission: number;
