@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ColaboradoresModule } from './features/colaboradores/colaboradores.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SellModule } from './features/sell/sell.module';
+import { SemanaDoisModule } from './features/semana-dois/semana-dois.module';
+import { SemanaTresModule } from './features/semana-tres/semana-tres.module';
+import { SemanaQuatroModule } from './features/semana-quatro/semana-quatro.module';
+
 
 
 
@@ -18,9 +19,10 @@ import { SellModule } from './features/sell/sell.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ColaboradoresModule,
     BrowserAnimationsModule,
-    SellModule
+    SemanaDoisModule,
+    SemanaTresModule,
+    SemanaQuatroModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
