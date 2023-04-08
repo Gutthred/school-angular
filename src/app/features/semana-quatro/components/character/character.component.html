@@ -15,11 +15,11 @@
     <mat-card-title>{{ character.name }} {{ character.clan }}</mat-card-title>
     <mat-card-subtitle
       >{{ character.patent }} of
-      {{ character.mainAffiliation }}</mat-card-subtitle
+      {{ character.affiliation[0] }}</mat-card-subtitle
     >
     <p>
       {{ character.name }} is {{ character.clan }}'s clan member and has been a
-      former {{ character.patent }} of {{ character.mainAffiliation }}, the
+      former {{ character.patent }} of {{ character.affiliation[0] }}, the
       elements affinity and other affiliations will be listed down below as with
       the total of missions and kills.
     </p>
