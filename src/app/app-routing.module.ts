@@ -1,10 +1,39 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoremPageComponent } from './features/semana-dois/pages/pages.component';
+import { Week4Component } from './features/semana-quatro/pages/week4/week4.component';
+import { Week3Component } from './features/semana-tres/pages/week3/week3.component';
+import { HomeComponent } from './features/home/pages/home/home.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'projects',
+    component: HomeComponent,
+  },
+  {
+    path: 'week2',
+    component: LoremPageComponent,
+  },
+  {
+    path: 'week3',
+    component: Week3Component,
+  },
+  {
+    path: 'week4',
+    component: Week4Component,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

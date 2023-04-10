@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoremComponent } from './components/lorem/lorem.component';
+import { ComponentsComponent } from './components/components.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { LoremPageComponent } from './pages/pages.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
 @NgModule({
   declarations: [
-    LoremComponent,
-    LoremPageComponent
+    ComponentsComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     SharedModule
   ],
   exports:[
-    LoremComponent,
-    LoremPageComponent,
+    HomeComponent
   ]
 })
-export class SemanaDoisModule { }
+export class HomeModule { }

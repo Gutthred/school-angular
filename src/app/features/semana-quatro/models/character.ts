@@ -1,7 +1,8 @@
 export interface Character {
-    id?: number,
+    id: number,
     name: string,
     clan: string,
+    mainAffiliation: string,
     affiliation: string[],
     nature: string[],
     patent: string,

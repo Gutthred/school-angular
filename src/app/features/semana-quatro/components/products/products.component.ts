@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from '../../models/character';
 
 @Component({
   selector: 'app-products',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent {
-  character = [
+  character: Array<Character>= [
     {
       id: 1,
       name: 'Sasuke',

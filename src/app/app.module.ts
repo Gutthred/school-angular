@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SemanaDoisModule } from './features/semana-dois/semana-dois.module';
 import { SemanaTresModule } from './features/semana-tres/semana-tres.module';
 import { SemanaQuatroModule } from './features/semana-quatro/semana-quatro.module';
+import { HomeModule } from './features/home/home.module';
 
 
 
@@ -23,6 +24,8 @@ import { SemanaQuatroModule } from './features/semana-quatro/semana-quatro.modul
     SemanaDoisModule,
     SemanaTresModule,
     SemanaQuatroModule,
+    HomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
