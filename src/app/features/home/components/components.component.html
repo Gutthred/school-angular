@@ -1,1 +1,82 @@
-<p>components works!</p>
+<section class="home__container">
+  <div class="home__main-container">
+    <div class="home__hero-img">
+      <figure class="home__img">
+        <img
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/angular-icon.png"
+          alt="Angular Logo"
+        />
+      </figure>
+    </div>
+    <div class="home__main">
+      <span class="home__main-title"
+        >CLICK E VEJA OS PROJETOS REALIZADOS COM ANGULAR</span
+      >
+      <span
+        [routerLink]="['/projetos']"
+        routerLinkActive="router-link-active"
+        class="home__main-button"
+        >PROJETOS</span
+      >
+    </div>
+  </div>
+  <div class="home__cards">
+    <div class="home__card">
+      <div class="home__card-title">
+        <span class="card-title">Works at any scale</span>
+      </div>
+      <div class="home__card-img">
+        <figure>
+          <img
+            src="https://angular.io/generated/images/marketing/home/any-size.svg"
+            alt="Any size"
+          />
+        </figure>
+      </div>
+      <div class="home__card-description">
+        <span class="card-description">
+          Angular lets you start small and supports you as your team and apps
+          grow.
+        </span>
+      </div>
+    </div>
+    <div class="home__card">
+      <div class="home__card-title">
+        <span class="card-title">Loved by millions</span>
+      </div>
+      <div class="home__card-img">
+        <figure>
+          <img
+            src="https://angular.io/generated/images/marketing/home/loved-by-millions.svg"
+            alt="Build for everyone"
+          />
+        </figure>
+      </div>
+      <div class="home__card-description">
+        <span class="card-description">
+          Join the millions of developers building with Angular in a thriving
+          and friendly community.
+        </span>
+      </div>
+    </div>
+    <div class="home__card">
+      <div class="home__card-title">
+        <span class="card-title">Build for everyone</span>
+      </div>
+      <div class="home__card-img">
+        <figure>
+          <img
+            src="https://angular.io/generated/images/marketing/home/build-for-everyone.svg"
+            alt="Build for everyone"
+          />
+        </figure>
+      </div>
+      <div class="home__card-description">
+        <span class="card-description">
+          Rely on Angular's internationalization tools, security, and
+          accessibility to build for everyone around the world
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

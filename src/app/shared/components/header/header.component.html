@@ -2,19 +2,19 @@
   <div class="header__logo-title">
     <figure class="header__logo">
       <img
-        src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/angular-icon.png"
+        src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png"
         alt="Angular Logo"
       />
     </figure>
     <h1 class="header__title">
-      <span class="title__framework">ANGULAR</span>
       <span class="title__mjv"> by MJV SCHOOL </span>
     </h1>
   </div>
   <nav class="header__navBar">
     <div class="clickableButtons">
-      <span class="navBar__item">HOME</span>
+      <span [routerLink]="['/home']" class="navBar__item">HOME</span>
       <span class="navBar__item">PROJETOS</span>
     </div>
   </nav>
 </header>
+<!-- https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/angular-icon.png -->

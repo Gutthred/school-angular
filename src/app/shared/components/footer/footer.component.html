@@ -1,31 +1,58 @@
 <footer class="footer__container">
-  <div class="footer__navBar">
-    <a href="#"><span class="navBar__item">HOME</span></a>
-    <a href="#"><span class="navBar__item">ABOUT</span></a>
-    <a href="#"><span class="navBar__item">CONTACT</span></a>
-    <a href="#"><span class="navBar__item">FAQ</span></a>
-  </div>
-  <section class="footer__description">
-    <h4>What is a Component?</h4>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quos
-      quia excepturi provident error illo mollitia quasi aperiam! Corporis
-      magnam quasi hic necessitatibus voluptate iusto non aliquid unde nobis
-      laudantium saepe cumque harum optio blanditiis illo labore maxime suscipit
-      reprehenderit molestiae consectetur, voluptatibus eum. Fugiat hic deleniti
-      blanditiis explicabo.
-    </p>
+  <section class="footer__navBar">
+    <div class="footer__links">
+      <h6>LINK</h6>
+      <span class="navBar__item">HOME</span>
+      <span class="navBar__item">PROJETOS</span>
+    </div>
+    <div class="footer__quick-access">
+      <h6>ACESSO RÁPIDO</h6>
+      <span [routerLink]="['/week2']" class="navBar__p-item"
+        >Components and Module</span
+      >
+      <span [routerLink]="['/week3']" class="navBar__p-item"
+        >Data and Event binding</span
+      >
+      <span [routerLink]="['/week4']" class="navBar__p-item">Directives</span>
+      <span [routerLink]="['/home']" class="navBar__p-item"
+        >Pipe and Route</span
+      >
+    </div>
   </section>
 
   <section class="footer__description">
-    <h4>What is a Module?</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-      repudiandae aspernatur, quod sed eligendi molestiae laborum quo excepturi
-      sapiente voluptates quos nulla cupiditate aliquam alias numquam nemo
-      fugiat. Dolores atque libero quos quibusdam, sint in minima exercitationem
-      beatae deserunt earum asperiores magnam? Odio, corporis dolorem suscipit
-      rerum commodi possimus quisquam!
+    <h6>Sobre este projeto</h6>
+    <p class="footer__text">
+      Este projeto tem como base a aplicação dos conhecimentos adquiridos no
+      decorrer do curso organizado pela <b>MJV Academy</b>.
+    </p>
+    <p class="footer__text">
+      As aulas foram dividas em <b>temas</b>, e a cada semana era sugerido que
+      utilizassemos os <b>conceitos aprendidos</b>, sendo assim, optei por
+      agrupar em um único projeto, listando cada um em sua respectiva na página,
+      que pode ser acessado através da página <b>PROJETOS</b> ou links de
+      <b>acesso rápido</b>.
+    </p>
+    <p class="footer__text">
+      <b
+        >Esta página não possui qualquer fim comercial e todos os direitos são
+        reservados as marcas aqui listadas, o intuíto deste projeto é demonstrar
+        a capacidade de desenvolvimento do autor.</b
+      >
+    </p>
+  </section>
+  <section class="footer__description">
+    <h6>SOBRE MJV SCHOOL</h6>
+    <p class="footer__text">
+      <b>MJV Academy</b> é o Programa de Desenvolvimento construído e gerido
+      <b>colaborativamente</b>, que promove a troca de conhecimentos,
+      potencializa nossa <b>cultura organizacional</b> para dentro e para fora
+      da MJV e apoia o desenvolvimento dos colaboradores e da companhia.
+    </p>
+    <p class="footer__text">
+      A <b>Academy</b> contempla ações como
+      <b>Treinamentos, Cursos e Eventos</b> que visam a capacitação em diversos
+      temas, ferramentas e modelos de negócios.
     </p>
   </section>
 </footer>

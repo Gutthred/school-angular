@@ -24,10 +24,12 @@
 .header__title{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4rem;
+    margin-left: 2.22rem;
     font-size: x-small;
+
     
 }
 
@@ -66,7 +68,7 @@
 }
 
 .navBar__item:hover{
-    border-bottom: 1px solid #FF3636;
+    border-bottom: 1px solid #C3002F;
     transition: all ease-in-out .5s;
 }
 
