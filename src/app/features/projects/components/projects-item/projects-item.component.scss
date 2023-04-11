@@ -1,0 +1,50 @@
+.project__main-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+    letter-spacing: 0.15rem;
+    color: #363636;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 1px #363636;
+
+}
+
+.project__card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__title{
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.project__subtitle{
+    font-size: xx-small;
+    font-weight: 600;
+    color: #c3002f;
+}
+
+.project__description{
+    font-size: smaller;
+}
+
+.project__features{
+    font-size: xx-small;
+}
+
+.project__button{
+    padding: 0.3rem 0.5rem;
+    border-radius: 50px;
+    background-color: #363636;
+    color: #FFFFFF;
+&:hover{
+    cursor: pointer;
+    background-color: #c3002f;
+    transition: all ease-in 0.35s;
+}}

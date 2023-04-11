@@ -1,3 +1,3 @@
 <app-header></app-header>
-<app-listagem [userData]="user"></app-listagem>
+<app-listagem *ngFor="let u of users" [userData]="u"></app-listagem>
 <app-footer></app-footer>

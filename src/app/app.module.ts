@@ -8,14 +8,10 @@ import { SemanaDoisModule } from './features/semana-dois/semana-dois.module';
 import { SemanaTresModule } from './features/semana-tres/semana-tres.module';
 import { SemanaQuatroModule } from './features/semana-quatro/semana-quatro.module';
 import { HomeModule } from './features/home/home.module';
-
-
-
+import { ProjectsModule } from './features/projects/projects.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,9 +21,9 @@ import { HomeModule } from './features/home/home.module';
     SemanaTresModule,
     SemanaQuatroModule,
     HomeModule,
-
+    ProjectsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

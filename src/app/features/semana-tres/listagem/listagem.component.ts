@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./listagem.component.scss'],
 })
 export class ListagemComponent implements OnInit {
-  @Input() nome: string = '';
   @Input() userData!: {
     id: number;
     name: string;

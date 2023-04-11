@@ -1,0 +1,8 @@
+.project__card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100vh;
+    padding: 1rem;
+    gap: 1rem 2rem;
+    background: rgba($color: #363636, $alpha: 0.22)
+}
