@@ -5,12 +5,15 @@
     'kiri-shinobi': character.mainAffiliation === 'kiri'
   }"
 >
-  <img
+  <div class="card__image">
+    <img
     class="card-img"
     mat-card-image
     src="{{ character.img }}"
     alt="{{ character.name }}"
   />
+  </div>
+  
   <mat-card-content class="character__card-content">
     <mat-card-title>{{ character.name }} {{ character.clan }}</mat-card-title>
     <mat-card-subtitle

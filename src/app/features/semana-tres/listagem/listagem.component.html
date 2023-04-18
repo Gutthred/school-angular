@@ -1,23 +1,25 @@
 <section class="main__container">
-  <section class="colaborador__card">
-    <h1>
-      <span class="listagem__fname"
-        >{{ userData.name | uppercase }} - #00{{ userData.id }}</span
-      >
-    </h1>
-    <h4>DETAILS</h4>
-    <div class="card__role">
-      <h6>ROLE:</h6>
-      <span class="listagem__info">{{ userData.role }}</span>
+  <div class="main__card-content">
+    <div class="colaborador__card">
+      <h1>
+        <span class="listagem__fname"
+          >{{ userData.name | uppercase }} - #00{{ userData.id }}</span
+        >
+      </h1>
+      <h4>DETAILS</h4>
+      <div class="card__role">
+        <h6>ROLE:</h6>
+        <span class="listagem__info">{{ userData.role }}</span>
+      </div>
+      <div class="card__description">
+        <h6>ABOUT:</h6>
+        <span class="listagem__info">{{ userData.description }}</span>
+      </div>
+      <div class="card__wage">
+        <h6>WAGE:</h6>
+        <span class="listagem__info">{{ userData.wage }}</span>
+        <h4>yaks per year</h4>
+      </div>
     </div>
-    <div class="card__description">
-      <h6>ABOUT:</h6>
-      <span class="listagem__info">{{ userData.description }}</span>
-    </div>
-    <div class="card__wage">
-      <h6>WAGE:</h6>
-      <span class="listagem__info">{{ userData.wage }}</span>
-      <h4>yaks per year</h4>
-    </div>
-  </section>
+  </div>
 </section>

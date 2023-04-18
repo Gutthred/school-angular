@@ -2,15 +2,30 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
-    padding: 2rem;
+    height: min(400px, 400px);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 1px #363636;
     letter-spacing: 0.15rem;
     color: #363636;
     line-height: 1.5rem;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: solid 1px #363636;
+    padding: 1rem;
+    gap: 1rem;
+}
 
+.project__main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; 
+}
+
+.project__card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
 }
 
 .project__card-title{
@@ -39,6 +54,10 @@
 }
 
 .project__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 0.3rem 0.5rem;
     border-radius: 50px;
     background-color: #363636;

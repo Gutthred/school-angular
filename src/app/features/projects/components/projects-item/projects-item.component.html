@@ -1,14 +1,18 @@
 <section class="project__main-card">
-  <div class="project__card-title">
-    <h1 class="project__title">{{ project.name | uppercase }}</h1>
-  </div>
-  <div class="project__card-description">
-    <span class="project__subtitle">DESCRIPTION: </span>
-    <span class="project__description">{{ project.description }}</span>
-  </div>
-  <div class="project__card-features">
-    <span class="project__subtitle">TAGS: </span>
-    <span class="project__features">{{ project.features }}</span>
+  <div class="project__main-content">
+    <div class="project__card-title">
+      <h1 class="project__title">{{ project.name | uppercase }}</h1>
+    </div>
+    <div class="project__card-content">
+      <div class="project__card-description">
+        <span class="project__subtitle">DESCRIPTION: </span>
+        <span class="project__description">{{ project.description }}</span>
+      </div>
+      <div class="project__card-features">
+        <span class="project__subtitle">TAGS: </span>
+        <span class="project__features">{{ project.features }}</span>
+      </div>
+    </div>
   </div>
   <div class="project__card-button">
     <span [routerLink]="['/' + project.route]" class="project__button">DETAILS</span>

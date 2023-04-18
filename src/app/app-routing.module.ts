@@ -8,8 +8,7 @@ import { ProjectsComponent } from './features/projects/pages/projects/projects.c
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
+    path: '', redirectTo: '/home', pathMatch: 'full',
   },
   {
     path: 'home',

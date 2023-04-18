@@ -18,7 +18,7 @@ export class ProductsComponent {
       patent: 'Genin',
       mission: 34,
       kill: 85,
-      img: 'https://lh4.googleusercontent.com/9eMLU-SQRYtQNr8U0A7jOjLqoyqoIavtcutERnf0jn1HXSQyjXIfumcBlpWUe19U_h-uf3s8Ypn2FpgoOHxJR4OtirYT3Gaz9jkxrmQjnZFBgzfZnTVb7pIeCNsczcDJzOlMhoB9qFhB6f4vyi8eONJYKs695x7TJZJ-QXt8KXAuss3GRR1zr42jmFeanQ',
+      img: 'https://vignette.wikia.nocookie.net/naruto/images/9/99/Sasuke_Uchiha_(Akatsuki).PNG/revision/latest?cb=20150126182611&path-prefix=pt-br',
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export class ProductsComponent {
       patent: 'Hokage',
       mission: 571,
       kill: 1298,
-      img: 'https://criticalhits.com.br/wp-content/uploads/2021/04/Kakashi_Boruto.jpg',
+      img: 'http://4.bp.blogspot.com/-T_GwICvZRHo/ULlr246kU-I/AAAAAAAAAxM/qr1dbneTOAg/s1600/moe-34393-hatake_kakashi-male-naruto.png',
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export class ProductsComponent {
       patent: 'Chunin',
       mission: 47,
       kill: 1284,
-      img: 'https://staticg.sportskeeda.com/editor/2023/02/fc8d6-16756653708400-1920.jpg',
+      img: 'https://vignette2.wikia.nocookie.net/naruto/images/3/31/Obito_Jinch%C5%ABriki_%28Render%29.png/revision/latest?cb=20150519212703&path-prefix=pt-br',
     },
     {
       id: 4,
@@ -58,7 +58,7 @@ export class ProductsComponent {
       patent: 'Hokage',
       mission: 247,
       kill: 70,
-      img: 'https://sm.ign.com/ign_br/screenshot/default/naruto-boruto_bpec.jpg',
+      img: 'http://clipart-library.com/img/419043.png',
     },
     {
       id: 5,
@@ -70,7 +70,7 @@ export class ProductsComponent {
       patent: 'Tsuchikage',
       mission: 742,
       kill: 148,
-      img: 'https://staticg.sportskeeda.com/editor/2022/09/b511d-16632473097456.png',
+      img: 'https://vignette.wikia.nocookie.net/naruto/images/0/06/Kurotsuchi_Tsuchikage_(Render).png/revision/latest?cb=20160706005814&path-prefix=pt-br',
     },
     {
       id: 6,
@@ -82,7 +82,7 @@ export class ProductsComponent {
       patent: 'Jonin',
       mission: 428,
       kill: 75,
-      img: 'https://nerdhits.com.br/wp-content/uploads/2021/09/shikamaru-hokage-768x402.jpg',
+      img: 'https://i.pinimg.com/originals/eb/80/28/eb802879ce1b254ca7b43ea7c94bb421.png',
     },
     {
       id: 7,
@@ -94,7 +94,7 @@ export class ProductsComponent {
       patent: 'Genin',
       mission: 49,
       kill: 173,
-      img: 'https://64.media.tumblr.com/0317e8b559c52f4aa40a1f96517a954c/tumblr_pcmmzbaXWU1wjlimbo1_1280.png',
+      img: 'http://img2.wikia.nocookie.net/__cb20120522132903/denaruto3/de/images/8/8d/Suigetsu_profil.png',
     },
     {
       id: 8,
@@ -106,7 +106,7 @@ export class ProductsComponent {
       patent: 'Mizukage',
       mission: 579,
       kill: 879,
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZzMjlD3bKfPmwpjd_h6D_-63qq9bDHqjeg&usqp=CAU',
+      img: 'https://i.pinimg.com/originals/4c/72/e0/4c72e05acba1195e939cf3deb19664f6.png',
     },
   ];
 }
