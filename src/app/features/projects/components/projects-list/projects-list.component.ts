@@ -20,24 +20,24 @@ export class ProjectsListComponent {
       id: 2,
       name: 'Data and Event binding',
       description:
-        'Nesta ',
-      features: ['Data binding', ' Event binding', ],
+        'Data binding é a comunicação entre a VIEW e a LÓGICA, onde é possível realizar interpolação de STRINGS , quanto ao Event binding, podemos atrelar uma ação por exemplo de click em uma TAG com uma ação no componente, nesta aula foi solicitado que realizassemos a listassemos uma relação de pessoas, onde esses dados seriam disponibilizados através de interpolação.',
+      features: ['Data binding', ' Event binding', ' Interpolation', ' HTML'],
       route: 'week3',
     },
     {
       id: 3,
       name: 'Directives',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis, voluptates error quos beatae consequatur expedita repellat reprehenderit, mollitia explicabo corporis dolor eveniet ratione molestiae nesciunt porro at odit. Est minus corrupti sunt voluptatum perferendis!',
-      features: ['Components'],
+        'Diretivas são dividas em três categorias: Component, Attribute e Structural; foi solicitado a utilização das diretivas estruturais e de atributos para reduzir o hardcode, a estrutura de laço foi utilizada renderizando os componentes de acordo com a quantidade de objetos em um array, assim como a renderização condicional estabelecida pelo ngIf',
+      features: ['Component', ' Attribute', ' Structural Diretives'],
       route: 'week4',
     },
     {
       id: 4,
       name: 'Pipe and Route',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis, voluptates error quos beatae consequatur expedita repellat reprehenderit, mollitia explicabo corporis dolor eveniet ratione molestiae nesciunt porro at odit. Est minus corrupti sunt voluptatum perferendis!',
-      features: ['Components'],
+        'Esta aplicação onde você está, utilizou de pipes e routes para definir as rotas a serem seguidas, assim como a formatação dos textos e número.',
+      features: ['Pipes', ' Routes', 'LazyLoad',],
       route: 'home',
     },
   ];
