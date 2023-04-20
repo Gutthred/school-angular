@@ -5,6 +5,10 @@ import { Week4Component } from './features/semana-quatro/pages/week4/week4.compo
 import { Week3Component } from './features/semana-tres/pages/week3/week3.component';
 import { HomeComponent } from './features/home/pages/home/home.component';
 import { ProjectsComponent } from './features/projects/pages/projects/projects.component';
+import { LoginComponent } from './features/semana-sete/login/pages/login/login.component';
+import { AuthenticatedComponent } from './features/semana-sete/authenticated/pages/authenticated/authenticated.component';
+import { AuthGuard } from './shared/guards/guard/auth.guard';
+
 
 const routes: Routes = [
   {
@@ -23,17 +27,27 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'week2',
+    path: 'projects/week2',
     component: LoremPageComponent,
   },
   {
-    path: 'week3',
+    path: 'projects/week3',
     component: Week3Component,
   },
   {
-    path: 'week4',
+    path: 'projects/week4',
     component: Week4Component,
   },
+  {
+    path: 'projects/week7/login',
+    component: LoginComponent,
+  },
+  {
+    path: 'projects/week7/gold-pot',
+    component: AuthenticatedComponent,
+    canActivate: [AuthGuard],
+  },
+
 ];
 
 @NgModule({

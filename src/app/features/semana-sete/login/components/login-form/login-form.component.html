@@ -1,0 +1,107 @@
+<section class="login__main-container">
+  <div class="login__description">
+    <div class="login__desc-title">
+      <h1>Services, Template Driven, Authenticate e Guard</h1>
+    </div>
+    <div class="login__desc-text">
+      <div class="leprechaun-text">
+        <h4>A lenda do Leprechaun</h4>
+        <p class="login__text">
+          De acordo com a <b class="hint-msg">le</b>nda, se você se deparar com o <b class="hint-msg">le</b>prechaun, não se
+          esqueça de segurá-<b class="hint-msg">l</b>o <b class="hint-msg">e</b> fazer três <b class="hint-msg">p</b>edidos. Para os i<b class="hint-msg">r</b>landeses, p<b class="hint-msg">e</b>ssoas
+          <b class="hint-msg">c</b>om sorte suficiente para capturar o duende verde podem exigir que ele
+          realize três desejos antes de ser liberto.
+        </p>
+        <p class="login__text">
+          Mas cuidado, o Leprec<b class="hint-msg">haun</b>, segundo contam as histórias, é
+          terrivelmente esperto e muito pouco confiável.
+        </p>
+        <p class="login__text">
+          O <b class="hint-msg">Leprechaun</b> é visto, quase sempre, com outros símbolos, como o
+          arco-íris e o pote de ouro. O ilustrador de figuras mágicas Brian
+          Froud afirma que ele sempre está escondido junto a tesouros secretos,
+          como potes de ouro, encontrados além do horizonte, na ponta de um
+          arco-íris.
+        </p>
+        <p class="login__text">
+          O ouro, segundo algumas versões de histórias irlandesas, era escondido
+          pelos Vikings, quando estes saqueavam tribos inteiras e escondiam os
+          tesouros embaixo da terra.
+        </p>
+        <p class="login__text">
+          Quando eles deixaram a Irlanda, o Leprechaun encontrou os potes de
+          ouro e voltou a enterrá-los em locais seguros, onde só podem ser
+          encontrados onde um arco-íris termina.
+        </p>
+        <h6>
+          fonte:
+          <a href="https://www.edublin.com.br/leprechaun/"
+            >E-dublin - Leprechaun</a
+          >
+        </h6>
+      </div>
+      <div class="desc-text">
+        <h4>Proposta do Exercício desta semana</h4>
+        <p class="login__text">
+          Utilização de Services, Template driven e Autenticação, onde neste
+          exemplo uma service é utilizada para armazenar o nome e senha de
+          acesso a página do POTE DE OURO, a validação do input é feito através
+          do template driven utilizando o conceito de two way binding, que
+          recebe as informações do EVENT e armazena na variável do componente,
+          que por sua vez faz a renderização e validação através do DATA
+          binding.
+        </p>
+        <p class="login__text">
+          O GUARD tem sua aplicação neste contexto como previnir que usuários
+          que não tenham sido autenticados tenham acesso a páginas, isto foi
+          feito utilizando do Session Storage, salvando o usuário após a
+          autenticação na Session e alterando a propriedade do usuário no guard
+          para true, habilitando o acesso que antes era proibido.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="login__card">
+    <div class="login__card-content">
+      <div class="login__card-greeting">
+        <p class="login__greeting-msg">
+          Olá criatura, informe o nome e a senha que apenas
+          criaturas dignas saberiam.
+        </p>
+      </div>
+      <div class="login__card-form-button">
+        <div class="login__form">
+          <div class="login__form-field">
+            <input
+              type="email"
+              placeholder="Nome"
+              name="email"
+              [(ngModel)]="email"
+              required
+            />
+          </div>
+          <div class="login__form-field">
+            <input
+              type="password"
+              placeholder="Senha"
+              name="password"
+              [(ngModel)]="pass"
+              required
+            />
+          </div>
+          <p class="error-msg" *ngIf="error">
+            O nome ou a senha não são os da profecia, caso você não seja digno e queira saber mesmo assim o nome e a senha clique no botão 'HINT'.
+          </p>
+        </div>
+        <div class="login__buttons">
+          <button type="submit" (click)="getAuthenticate()">LOGIN</button>
+          <button type="menu" *ngIf="error" (click)="displayHint()">HINT</button>
+        </div>
+        <div class="login__hint">
+          <p *ngIf="showHint" class="error-msg">Já que você não conseguiu acertar o nome e a senha, vou te informar, mas inverterei a ordem para que na próxima vez, você se esforce.</p>
+          <p *ngIf="showHint" class="error-msg">Nome: elel - Senha: nuahcerpel ... se divirta, espero você do outro lado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

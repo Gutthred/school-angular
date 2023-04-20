@@ -9,6 +9,8 @@ import { SemanaTresModule } from './features/semana-tres/semana-tres.module';
 import { SemanaQuatroModule } from './features/semana-quatro/semana-quatro.module';
 import { HomeModule } from './features/home/home.module';
 import { ProjectsModule } from './features/projects/projects.module';
+import { LoginModule } from './features/semana-sete/login/login.module';
+import { AuthenticatedModule } from './features/semana-sete/authenticated/authenticated.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,8 @@ import { ProjectsModule } from './features/projects/projects.module';
     SemanaQuatroModule,
     HomeModule,
     ProjectsModule,
+    LoginModule,
+    AuthenticatedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
