@@ -7,13 +7,13 @@ import { User } from '../../models/user.model';
 export class UsersService {
   users: User[] = [
     {
-      id: 1,
-      name: 'Leprechaun',
+      id: 7,
+      name: 'Infamous Leprechaun',
       email: 'lele',
       pass: 'leprechaun',
     },
     {
-      id: 2,
+      id: 1,
       name: 'Fabio Silva',
       email: 'fabio@gold.pot',
       pass: 'fabio',

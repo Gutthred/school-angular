@@ -33,13 +33,9 @@ export class LoginFormComponent {
     }
   }
 
-  clearSession(){
-    sessionStorage.clear();
-    this.router.navigateByUrl('projects/week7')
-  }
-
   displayHint(){
     this.showHint = !this.showHint;
+    sessionStorage.setItem('hint',JSON.stringify(this.showHint));
   }
 
 }

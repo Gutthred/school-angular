@@ -3,7 +3,7 @@
   color: #363636;
   justify-content: center;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
 }
 
 .login__description {
@@ -20,17 +20,18 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.login__desc-text{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    letter-spacing: 0.08rem;
+.login__desc-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  letter-spacing: 0.08rem;
 }
+
 
 .login__card {
   display: flex;
-  width: 30%;
-  padding: 1.5rem 1.5rem;
+  width: 20%;
+  margin: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -41,53 +42,79 @@
   justify-content: center;
   align-items: center;
   padding: 1.5rem 1.5rem;
-  background-color: rgba($color: #fbfbfb, $alpha: 0.8);
+  background-color: rgba($color: #cccccc, $alpha: 0.8);
   border: 1px solid #eeeeee;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.login__card-greeting{
-    font-size: large;
-    font-weight: 500;
-    width: 80%;
-    justify-content: center;
-    align-self: center;
-    display: flex;
+.login__card-greeting {
+  font-weight: 500;
+  justify-content: center;
+  align-self: center;
+  display: flex;
 }
 
-:is(input[type=email],input[type=password]){
-    background-color: #FBFBFB;
-    color: #363636;
-    border: 2px solid #363636;
-    font-size: larger;
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 0.3rem;
 }
 
-:is(button[type=submit],button[type=menu]){
-    background-color: #363636;
-    color: #FFFFFF;
-    border: 1px solid #363636;
-    font-size: medium;
-    width: 100%;
-    &:hover{
-        cursor: pointer;
-        background-color: #c3002f;
-        border: 1px solid #c3002f;
-        transition: all 0.4s ease-in;
-    }
+:is(input[type="email"], input[type="password"]) {
+  display: flex;
+  background-color: #fbfbfb;
+  color: #363636;
+  border: 2px solid #363636;
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  &:focus {
+    background-color: #fbfbfb;
+  }
+}
+
+.login__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.login__button {
+  background-color: #363636;
+  color: #ffffff;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  padding: 0.3rem;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+    background-color: #c3002f;
+    border: 1px solid #c3002f;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.error-container{
+    margin: 1rem 0 0 1rem;
 }
 
 .error-msg {
   color: #c3002f;
-  font-size: x-small;
+  font-size: small;
 }
 
 .hint-msg {
   color: #c3002f;
 }
 
-h6, h4, h1{
-    text-transform: uppercase;
-    font-weight: 500;
+h6,
+h4,
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
 }

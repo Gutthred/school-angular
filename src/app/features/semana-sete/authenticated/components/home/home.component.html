@@ -1,1 +1,47 @@
-<p>home works!</p>
+<section class="gold-pot__main-container">
+  <div class="gold-pot__main-content">
+    <div class="gold-pot__content">
+      <p class="gold-pot-title">Ora ora ora!</p>
+      <p class="gold-pot-text">
+        Não é que tu veio mesmo! Se você chegou aqui, é porque tudo saiu como
+        planejado, ou não, entretanto, pode ser.
+      </p>
+      <p *ngIf="!hintHasBeenUsed" class="gold-pot-text">
+        E não, você não terá prêmio algum, tu se esforçou para advinhar o nome e
+        a senha, não foi bem um esforço porque estava na sua cara, mas mesmo
+        assim ... acredito que lhe devo um PARABÉNS, teve todo esse trabalho e
+        levou mais tempo para chegar no mesmo lugar que os outros que utilizaram
+        da dica.
+      </p>
+      <p *ngIf="hintHasBeenUsed" class="gold-pot-text">
+        E não, você não terá prêmio algum, só seguiu os passos e é o mínimo
+        esperado para alguém letrado, de qualquer maneira, preciso lhe dar
+        PARABÉNS, você não é especial, todo mundo chega aqui também,
+        <b class="cheater-msg">ainda mais usando a dica.</b>
+      </p>
+      <p class="gold-pot-text">
+        Agora que você entrou para o grupo seleto de pessoas que conseguiram, rs
+        ... lembre-se isso é como naquele filme que tem um clube de luta no qual
+        não se deve mencionar sobre o clube, em que o personagem parece sofrer
+        um transtorno e tem duas personalidades e no final acaba atirando contra
+        a própria cabeça.
+      </p>
+      <p class="gold-pot-text">
+        Primeira regra: é não ter regra, espera ... acho que é pra não falar
+        sobre o clube, no caso não fale sobre nós ou fale também, tanto faz ...
+        clique no botão aqui em baixo para voltar ao mundinho de onde você
+        pertence.
+      </p>
+      <button type="submit" (click)="clearSession()">LOGOUT</button>
+    </div>
+    <div class="gold-pot__figure">
+      <figure class="gold-pot__img-card">
+        <img
+          class="gold-pot-img"
+          src="http://clipart-library.com/images/pc5rGqeni.png"
+          alt="Leprechaun"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
