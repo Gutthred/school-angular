@@ -1,0 +1,26 @@
+.main__container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .main__container{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+    .main__container{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }  
+}
+
+@media screen and (min-width: 1440px) {
+    .main__container{
+        grid-template-columns: repeat(4, 1fr);
+        
+    }  
+}

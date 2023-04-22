@@ -3,24 +3,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 2rem;
   gap: 1rem 1rem;
   color: #363636;
 }
 
 .gold-pot__main-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  width: max-content;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .gold-pot__content {
   display: flex;
   flex-direction: column;
-  width: 40%;
   padding: 1rem 1rem;
   gap: 1rem;
   background-color: rgba($color: #fff, $alpha: 0.6);
@@ -60,7 +58,7 @@
 }
 
 .gold-pot-img {
-  width: 400px;
+  width: 300px;
   transform: rotateY(180deg);
 }
 
