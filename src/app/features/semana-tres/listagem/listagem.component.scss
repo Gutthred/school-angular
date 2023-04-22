@@ -1,16 +1,20 @@
 .main__container {
-  margin: 3rem;
-  height: 100%;
+  margin: 1.5rem;
+  // height: 100%;
+  // display: flex;
+  // flex-direction: row;
+}
+
+.main__card-content{
   display: flex;
-  flex-direction: row;
 }
 
 .colaborador__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 33%;
-  padding: 1rem;
+  // width: 33%;
+  padding: 0.5rem;
   background-color: #ffffff;
   border: 1px solid #363636;
   gap: 1rem;

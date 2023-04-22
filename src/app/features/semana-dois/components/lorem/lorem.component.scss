@@ -2,20 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   gap: 2rem;
   padding: 5rem;
   color: #363636;
 }
 
-.main__container .main__title-container {
+.main__title-container,
+.main__title {
   display: flex;
-  justify-self: center;
-}
-
-.main__container .main__title-container .main__title {
   font-size: 4rem;
   font-weight: 600;
+  line-height: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.5rem;
 }
@@ -23,11 +20,12 @@
 .main__lorem {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.lorem-paragraph {
+.lorem-paragraph-1,
+.lorem-paragraph-2,
+.lorem-paragraph-3 {
   padding: 1rem;
   font-size: small;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -36,10 +34,36 @@
   border: 1px solid #363636;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-.lorem-paragraph:hover{
+  &:hover {
     transform: scale(1.02);
     box-shadow: rgba(255, 255, 200, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+.lorem-paragraph-2, .lorem-paragraph-3{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .lorem-paragraph-2{
+    display: block;
+  }
+
+  .lorem-paragraph-1, .lorem-paragraph-3{
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 1440px) {
+
+  .lorem-paragraph-3{
+    display: block;
+  }
+
+  .lorem-paragraph-1, .lorem-paragraph-2{
+    display: none;
+  }
+  
 }
