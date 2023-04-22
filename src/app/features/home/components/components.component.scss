@@ -3,40 +3,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
-  height: 100vh;
   background: rgba($color: #363636, $alpha: 0.22);
+  color: #363636;
 }
 
 .home__main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  width: 100%;
+  margin-top: 3rem;
 }
 
 .home__img {
   display: flex;
   margin: 1rem;
-  height: 15rem;
+  height: 7rem;
 }
 
 .home__main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  width: 25%;
-  line-height: 3rem;
 }
 
 .home__main-title {
-  color: #363636;
-  width: 70%;
   text-decoration: none;
   font-weight: 600;
-  font-size: x-large;
+  font-size: medium;
 }
 
 .home__main-button {
@@ -56,7 +52,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30%;
+    width: 100%;
     height: 100%;
     background-color: #363636;
     border-radius: 10rem;
@@ -78,19 +74,19 @@
     color: #fff;
     cursor: pointer;
     &:before {
-      width: 30%;
+      width: 100%;
     }
   }
 }
 
 .home__cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  gap: 3rem;
-  width: 80%;
-  color: #363636;
-  margin-bottom: 3rem;
+  align-items: center;
+  margin: 3rem 0rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .home__card {
@@ -101,7 +97,6 @@
   gap: 0.5rem;
   padding: 1rem;
   letter-spacing: 0.1rem;
-  width: 20%;
   background-color: #ffffff8a;
   border: 1px solid #363636;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -123,4 +118,59 @@
 .card-description {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+
+  .home__cards {
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 80%; 
+  }
+
+  .home__card {
+    min-height: 360px;
+    width: 40%;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .home__main-container {
+    flex-direction: row;
+  }
+
+  .home__img {
+    display: flex;
+    margin: 1rem;
+    height: 15rem;
+  }
+
+  .home__main {
+    line-height: 2rem;
+  }
+
+  .home__main-title {
+    width: 80%;
+    font-size: x-large;
+  }
+
+  .home__main-button {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    margin-left: 2.5rem;
+  }
+
+  .home__cards {
+    gap: 3rem;
+  }
+
+  .home__card {
+    min-height: 360px;
+    width: 50%;
+    padding: 0.5rem;
+  }
+
 }
